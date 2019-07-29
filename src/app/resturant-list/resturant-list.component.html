@@ -10,11 +10,12 @@
     
 <div>
     <table id="resturants">
+      <caption><h2>List of Restuarants</h2></caption>
       <tr>
-        <th>Name</th>
-        <th>City</th>
-        <th>Type</th>
-        <th>Rating</th>
+        <th scope="col">Name</th>
+        <th scope="col">City</th>
+        <th scope="col">Type</th>
+        <th scope="col">Rating</th>
       </tr>
       <tr *ngFor="let resturantlist of filterRestuarant">
         <td>{{resturantlist.name}}</td>
