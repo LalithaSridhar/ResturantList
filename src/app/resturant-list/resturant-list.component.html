@@ -1,0 +1,28 @@
+
+   
+<div class="container">
+    <h1>
+        Welcome to Search Restuarant App
+      </h1>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search by city" style="width:300px" [(ngModel)]="searchTerm" />
+    </div>
+    
+<div>
+    <table id="resturants">
+      <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Type</th>
+        <th>Rating</th>
+      </tr>
+      <tr *ngFor="let resturantlist of filterRestuarant">
+        <td>{{resturantlist.name}}</td>
+        <td>{{resturantlist.city}}</td>
+        <td>{{resturantlist.type}}</td>
+        <td>{{resturantlist.rating}}</td>
+      </tr>
+      <tr>
+    </table>
+    </div>
+    </div>
