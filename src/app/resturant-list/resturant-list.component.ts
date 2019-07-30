@@ -13,6 +13,7 @@ export class ResturantListComponent implements OnInit {
   ngOnInit() {
   }
 restuarant = RESTUARANT;
+cflag = false;
   
 filterRestuarant: any[];
 private _searchTerm: string;
@@ -24,6 +25,7 @@ this._searchTerm = value;
 this.filterRestuarant = this.filterRestuarants(value);
 }
 filterRestuarants(searchString: string) {
+  this.cflag = true;
 return this.restuarant.filter(restuarant =>
 	restuarant.city.toLowerCase().indexOf(searchString.toLowerCase()) !== -1);
 }

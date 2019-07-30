@@ -10,8 +10,8 @@
     
 <div>
     <table id="resturants">
-      <caption><h2>List of Restuarants</h2></caption>
-      <tr>
+      <caption><h2 *ngIf="cflag">List of Restuarants</h2></caption>
+      <tr *ngIf="cflag">
         <th scope="col">Name</th>
         <th scope="col">City</th>
         <th scope="col">Type</th>
